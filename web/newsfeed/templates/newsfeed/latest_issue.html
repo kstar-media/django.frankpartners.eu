@@ -1,0 +1,23 @@
+{% extends 'newsfeed/base.html' %}
+{% load static %}
+
+{% block head_title %}Issue #{{ latest_issue.issue_number }}{% endblock %}
+
+{% block content %}
+<section class="w3l-about2">
+    <div class="features-main py-5">
+      <div class="container py-lg-3">
+        <div class="row features">
+            <div class="col-md-4 feature-1 mt-5">
+                <h1>Issue #{{ latest_issue.issue_number }}</h1>
+
+                <h3>{{ latest_issue.title }}</h3>
+                <p>{{ latest_issue.short_description }}</p>
+                publish date: <b>{{ latest_issue.publish_date|date:"D d M Y" }}</b>
+
+                {% include 'newsfeed/issue_posts.html' with posts=latest_issue.posts.all %}
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,46 @@
+{% extends 'sites/base.html' %}
+{% load static %}
+{% block content %}
+<section class="w3l-career1 py-5 mt-5">
+  <div class="growth-align py-md-5 py-0 mt-5">
+    <div class="container py-md-5 py-0">
+      <div class="row growth-info justify-content-center align-items-center text-center py-md-5 w-100 mx-auto">
+        <div class="col-lg-8 py-lg-3">
+          <h3>{{ headline }}</h3>
+          <p class="my-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor atque consequuntur unde,
+            necessitatibus
+            quaerat fuga explicabo, quis placeat iure perferendis alias libero velit officiis.</p>
+          <a href="#positions" class="btn btn-primary btn-theme">Download Values</a>
+        </div>
+          <div class="position-absolute img-circle emp-pos1 d-md-block d-none">
+            <img src="assets/images/emp1.jpg" class="img-fluid rounded" alt="Employee Image">
+          </div>
+          <div class="position-absolute img-circle emp-pos2 d-md-block d-none">
+            <img src="assets/images/emp2.jpg" class="img-fluid rounded" alt="Employee Image">
+          </div>
+          <div class="position-absolute img-circle emp-pos3 d-md-block d-none">
+            <img src="assets/images/emp3.jpg" class="img-fluid rounded" alt="Employee Image">
+          </div>
+          <div class="position-absolute img-circle emp-pos4 d-md-block d-none">
+            <img src="assets/images/emp4.jpg" class="img-fluid rounded" alt="Employee Image">
+          </div>
+          <div class="position-absolute img-circle emp-pos5 d-md-block d-none">
+            <img src="assets/images/emp5.jpg" class="img-fluid rounded" alt="Employee Image">
+          </div>
+          <div class="position-absolute img-circle emp-pos6 d-md-block d-none">
+            <img src="assets/images/emp6.jpg" class="img-fluid rounded" alt="Employee Image">
+          </div>
+          <div class="position-absolute img-circle emp-pos7 d-md-block d-none">
+            <img src="assets/images/emp7.jpg" class="img-fluid rounded" alt="Employee Image">
+          </div>
+          <div class="position-absolute img-circle emp-pos8 d-md-block d-none">
+            <img src="assets/images/emp8.jpg" class="img-fluid rounded" alt="Employee Image">
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include 'sites/snippets/two-grid.html' %}
+{% include 'sites/snippets/video.html' %}
+{% endblock %}

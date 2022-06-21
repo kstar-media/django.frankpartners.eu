@@ -1,0 +1,26 @@
+{% extends 'newsfeed/base.html' %}
+{% load static %}
+
+{% block head_title %}Unsubscribe{% endblock %}
+
+{% block content %}
+<section class="w3l-index-block6 py-5">
+    <div class="container py-lg-5">
+      <div class="subscribe mx-auto">
+        <div class="heading text-center mx-auto">
+          <h3 class="head">Unsubscribe! </h3>
+          <p class="my-3 head"> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+            Nulla mollis dapibus nunc, ut rhoncus
+            turpis sodales quis. Integer sit amet mattis quam.</p>
+        
+            {% include 'newsfeed/subscription_form.html' with form=form form_type='unsubscribe' %}
+        </div>
+      </div>
+    </div>
+  </section>
+
+{% endblock %}
+
+{% block footer_extra %}
+    <script type="text/javascript" src="{% static 'newsfeed/js/newsletter_subscription.js' %}"></script>
+{% endblock %}

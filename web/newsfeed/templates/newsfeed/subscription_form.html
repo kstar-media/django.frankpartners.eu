@@ -1,0 +1,8 @@
+<form action="{% if form_type == 'subscribe' %}{% url 'newsfeed:newsletter_subscribe' %}{% else %}{% url 'newsfeed:newsletter_unsubscribe' %}{% endif %}" method="post" class="subscribe-wthree pt-2 mt-5">
+    <div class="d-flex flex-wrap subscribe-wthree-field">
+        {% csrf_token %}
+        {{ form }}
+      <button class="btn form-control btn-primary" type="submit">{% if form_type == 'subscribe' %}Subscribe{% else %}Unsubscribe{% endif %}</button>
+      <div class="subscriptionMessage"></div>
+    </div>
+  </form>

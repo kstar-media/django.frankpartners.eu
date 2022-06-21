@@ -1,0 +1,68 @@
+{% extends 'sites/base.html' %}
+{% load static %}
+{% block content %}
+
+<!-- index-block1 -->
+<section class="w3l-about1">
+  <div class="new-block top-bottom">
+    <div class="container">
+      <div class="middle-section">
+        <!-- <h5>Tagline</h5> -->
+        <div class="section-width">
+          <h2 style="font-size:3em; line-height:60px">{{ headline }}</h2>
+        </div>
+        <div class="link-list-menu">
+          <p> {{ intro }} </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- //index-block1 -->
+
+<section class="w3l-about2">
+  <div class="features-main py-5">
+    <div class="container py-lg-3">
+      <div class="row features">
+        <div class="col-md-4 feature-1 mt-5">
+          <div class="feature-body">
+            <div class="feature-images">
+              <span><i class="fa fa-leaf" aria-hidden="true"></i></span>
+            </div>
+            <div class="feature-info mt-4">
+              <h3 class="feature-titel my-2"> {{ service1_headline }} </h3>
+              <p class="feature-text"> {{ service1_text }} </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 feature-2 mt-5">
+          <div class="feature-body">
+            <div class="feature-images">
+              <span><i class="fa fa-pagelines" aria-hidden="true"></i></span>
+            </div>
+            <div class="feature-info mt-4">
+              <h3 class="feature-titel my-2"> {{ service2_headline }} </h3>
+              <p class="feature-text"> {{ service2_text }} </p>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 feature-3 mt-5">
+          <div class="feature-body">
+            <div class="feature-images">
+              <span><i class="fa fa-envira" aria-hidden="true"></i></span>
+            </div>
+            <div class="feature-info mt-4">
+              <h3 class="feature-titel my-2"> {{ service3_headline }} </h3>
+              <p class="feature-text"> {{ service3_text }} </p>
+              <div class="hover">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

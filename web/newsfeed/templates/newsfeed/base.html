@@ -1,0 +1,214 @@
+<!--
+Author: Chris Klein 
+Author URL: http://kstar-media.de
+-->
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- web fonts -->
+    <link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900&display=swap" rel="stylesheet">
+    <!-- //web fonts -->
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="{% static '/css/style-starter.css' %}">
+  </head>
+  <body>
+{% include 'sites/navbar.html' %}
+
+{% block content %}
+
+{% endblock %}
+<!-- / index-block8 -->
+      <!-- footer-28 block -->
+      <section class="w3l-market-footer">
+        <footer class="footer-28">
+          <div class="footer-bg-layer">
+            <div class="container py-lg-3">
+              <div class="row footer-top-28">
+                <div class="col-md-6 footer-list-28 mt-5">
+                  <h6 class="footer-title-28">Contact information</h6>
+                  <ul>
+                    <li>
+                      <p><strong>Address</strong> : Strelitzer Straße 60, 10036 Berlin, Germany</p>
+                    </li>
+                    <li>
+                      <p><strong>T</strong> : <a href="tel:+404-11-22-89">+49 30 6823 1740</a></p>
+                    </li>
+                    <li>
+                      <p><strong>Email</strong> : <a href="mailto:info@frankpartners.eu">info@frankpartners.eu</a></p>
+                    </li>
+                  </ul>
+
+                  <div class="main-social-footer-28 mt-3">
+                    <ul class="social-icons">
+                      <li class="linkedin">
+                        <a href="https://www.linkedin.com/company/frankpartners/" title="Linkedin">
+                          <span class="fa fa-linkedin" aria-hidden="true"></span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-md-4 footer-list-28 mt-5">
+                      <h6 class="footer-title-28">Key services</h6>
+                      <ul>
+                        <li><a href="#">ESG</a></li>
+                        <li><a href="#">Integrity & compliance</a></li>
+                        <li><a href="#">Supply Chain </a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-4 footer-list-28 mt-5">
+                      <h6 class="footer-title-28">About fp</h6>
+                      <ul>
+                        <li><a href="#">Our company</a></li>
+                        <li><a href="#">Our values</a></li>
+                        <li><a href="#">Our team</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-2 footer-list-28 mt-5">
+                      <h6 class="footer-title-28">Careers</h6>
+                    </div>
+                    <div class="col-md-2 footer-list-28 mt-5">
+                      <h6 class="footer-title-28">News</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="midd-footer-28 align-center py-lg-4 py-3 mt-5">
+              <div class="container">
+                <p class="copy-footer-28 text-center"> &copy; 2022 FP. All Rights Reserved. Design by <a
+                    href="#">kstar-media</a></p>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+        <!-- move top -->
+        <button onclick="topFunction()" id="movetop" title="Go to top">
+          &#10548;
+        </button>
+        <script>
+          // When the user scrolls down 20px from the top of the document, show the button
+          window.onscroll = function () {
+            scrollFunction()
+          };
+
+          function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              document.getElementById("movetop").style.display = "block";
+            } else {
+              document.getElementById("movetop").style.display = "none";
+            }
+          }
+
+          // When the user clicks on the button, scroll to the top of the document
+          function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+          }
+        </script>
+        <!-- /move top -->
+      </section>
+      <!-- //footer-28 block -->
+
+      <!-- jQuery, Bootstrap JS -->
+      <script src="{% static '/js/jquery-3.3.1.min.js' %}"></script>
+      <script src="{% static '/js/bootstrap.min.js' %}"></script>
+
+      <!-- Template JavaScript -->
+      
+      <script src="{% static '/js/owl.carousel.js' %}"></script>
+
+      <!-- script for owlcarousel -->
+      <script>
+        $(document).ready(function () {
+          $('.owl-one').owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: true,
+            responsiveClass: true,
+            autoplay: false,
+            autoplayTimeout: 5000,
+            autoplaySpeed: 1000,
+            autoplayHoverPause: false,
+            responsive: {
+              0: {
+                items: 1,
+                nav: false
+              },
+              480: {
+                items: 1,
+                nav: false
+              },
+              667: {
+                items: 1,
+                nav: true
+              },
+              1000: {
+                items: 1,
+                nav: true
+              }
+            }
+          })
+        })
+      </script>
+      <!-- //script for owlcarousel -->
+
+      <!-- disable body scroll which navbar is in active -->
+      <script>
+        $(function () {
+          $('.navbar-toggler').click(function () {
+            $('body').toggleClass('noscroll');
+          })
+        });
+      </script>
+      <!-- disable body scroll which navbar is in active -->
+
+      <script src="{% static '/js/jquery.magnific-popup.min.js' %}"></script>
+      <script>
+        $(document).ready(function () {
+          $('.popup-with-zoom-anim').magnificPopup({
+            type: 'inline',
+
+            fixedContentPos: false,
+            fixedBgPos: true,
+
+            overflowY: 'auto',
+
+            closeBtnInside: true,
+            preloader: false,
+
+            midClick: true,
+            removalDelay: 300,
+            mainClass: 'my-mfp-zoom-in'
+          });
+
+          $('.popup-with-move-anim').magnificPopup({
+            type: 'inline',
+
+            fixedContentPos: false,
+            fixedBgPos: true,
+
+            overflowY: 'auto',
+
+            closeBtnInside: true,
+            preloader: false,
+
+            midClick: true,
+            removalDelay: 300,
+            mainClass: 'my-mfp-slide-bottom'
+          });
+        });
+      </script>
+
+</body>
+</html>

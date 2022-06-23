@@ -15,7 +15,7 @@ import os
 from os.path import dirname
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = dirname(dirname(dirname(dirname(os.path.abspath(__file__)))))
+BASE_DIR = dirname(os.path.abspath(__file__))
 CONTENT_DIR = os.path.join(BASE_DIR, 'content')
 
 

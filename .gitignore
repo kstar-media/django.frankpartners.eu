@@ -1,1 +1,10 @@
 __pycache__
+/web/website/__pycache__
+/web/website/migrations/__pycache__
+/web/web/__pycache__
+/web/sites/__pycache__
+/web/sites/migrations/__pycache__
+/web/newsfeed/migrations/__pycache__
+/web/newsfeed/utils/__pycache__
+/web/contactforms/__pycache__
+/web/contactforms/migrations/__pycache__

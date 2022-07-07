@@ -2,17 +2,18 @@
 {% load static %}
 {% block content %}
 
+{% for i in content %}
 <!-- index-block1 -->
-<section class="w3l-about1">
+<section class="w3l-integrity">
   <div class="new-block top-bottom">
     <div class="container">
       <div class="middle-section">
         <!-- <h5>Tagline</h5> -->
         <div class="section-width">
-          <h2 style="font-size:3em; line-height:60px">{{ headline }}</h2>
+          <h2 style="font-size:3em; line-height:60px">{{ i.headline }}</h2>
         </div>
         <div class="link-list-menu">
-          <p> {{ intro }} </p>
+          <p> {{ i.intro }} </p>
         </div>
       </div>
     </div>
@@ -30,8 +31,8 @@
               <span><i class="fa fa-leaf" aria-hidden="true"></i></span>
             </div>
             <div class="feature-info mt-4">
-              <h3 class="feature-titel my-2"> {{ service1_headline }} </h3>
-              <p class="feature-text"> {{ service1_text }} </p>
+              <h3 class="feature-titel my-2"> {{ i.service1_headline }} </h3>
+              <p class="feature-text"> {{ i.service1_text }} </p>
             </div>
           </div>
         </div>
@@ -41,8 +42,8 @@
               <span><i class="fa fa-pagelines" aria-hidden="true"></i></span>
             </div>
             <div class="feature-info mt-4">
-              <h3 class="feature-titel my-2"> {{ service2_headline }} </h3>
-              <p class="feature-text"> {{ service2_text }} </p>
+              <h3 class="feature-titel my-2"> {{ i.service2_headline }} </h3>
+              <p class="feature-text"> {{ i.service2_text }} </p>
 
             </div>
           </div>
@@ -53,8 +54,8 @@
               <span><i class="fa fa-envira" aria-hidden="true"></i></span>
             </div>
             <div class="feature-info mt-4">
-              <h3 class="feature-titel my-2"> {{ service3_headline }} </h3>
-              <p class="feature-text"> {{ service3_text }} </p>
+              <h3 class="feature-titel my-2"> {{ i.service3_headline }} </h3>
+              <p class="feature-text"> {{ i.service3_text }} </p>
               <div class="hover">
               </div>
             </div>
@@ -64,5 +65,5 @@
     </div>
   </div>
 </section>
-
+{% endfor %}
 {% endblock %}

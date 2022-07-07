@@ -10375,7 +10375,7 @@ button.owl-next {
 /* //partners */
 .w3l-index-block10 .new-block {
   background-size: cover;
-  background-image: linear-gradient(to right, rgba(25, 51, 101, 0.85), rgba(0, 0, 0, 0.08)), url(../images/green.jpg);
+  background-image: linear-gradient(to right, rgba(25, 51, 101, 0.85), rgba(0, 0, 0, 0.08)), url(../images/integrity.jpg);
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -10640,7 +10640,7 @@ button.owl-next {
 
   .w3l-esg .new-block {
     background-size: cover;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.57), rgba(0, 0, 0, 0.33)), url(../images/start-bg.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.57), rgba(0, 0, 0, 0.33)), url(../images/esg.jpg);
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -10665,7 +10665,7 @@ button.owl-next {
 
   .w3l-invest .new-block {
     background-size: cover;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.57), rgba(0, 0, 0, 0.33)), url(../images/green.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.57), rgba(0, 0, 0, 0.33)), url(../images/investigations.jpg);
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -10689,9 +10689,9 @@ button.owl-next {
   padding-top: 25px; }
 
 
-.w3l-about1 .new-block {
+.w3l-integrity .new-block {
   background-size: cover;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.57), rgba(0, 0, 0, 0.33)), url(../images/shared-bg.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.57), rgba(0, 0, 0, 0.33)), url(../images/integrity.jpg);
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -10700,57 +10700,57 @@ button.owl-next {
   align-items: center;
   padding: 2rem 0; }
 
-.w3l-about1 .middle-section {
+.w3l-integrity .middle-section {
   max-width: 450px; }
 
-.w3l-about1 .middle-section h2 {
+.w3l-integrity .middle-section h2 {
   color: #ffffff;
   font-size: 32px;
   line-height: 40px; }
 
-.w3l-about1 .link-list-menu p {
+.w3l-integrity .link-list-menu p {
   font-size: 16px;
   color: #eee;
   line-height: 26px;
   padding-top: 25px; }
 
 @media (max-width: 800px) {
-  .w3l-about1 .middle-section a {
+  .w3l-integrity .middle-section a {
     margin-top: 40px; } }
 
 @media (max-width: 667px) {
-  .w3l-about1 .link-list-menu {
+  .w3l-integrity .link-list-menu {
     max-width: 523px; }
-  .w3l-about1 .middle-section a {
+  .w3l-integrity .middle-section a {
     margin-top: 30px; }
-  .w3l-about1 .link-list-menu p {
+  .w3l-integrity .link-list-menu p {
     font-size: 15px;
     line-height: 22px; } }
 
 @media (max-width: 600px) {
-  .w3l-about1 .link-list-menu p {
+  .w3l-integrity .link-list-menu p {
     padding-top: 13px; } }
 
 @media (max-width: 480px) {
-  .w3l-about1 .link-list-menu p {
+  .w3l-integrity .link-list-menu p {
     font-size: 19px;
     line-height: 25px; } }
 
 @media (max-width: 440px) {
-  .w3l-about1 .middle-section h2 {
+  .w3l-integrity .middle-section h2 {
     font-size: 30px;
     line-height: 40px; } }
 
 @media (max-width: 384px) {
-  .w3l-about1 .link-list-menu p {
+  .w3l-integrity .link-list-menu p {
     font-size: 18px; }
-  .w3l-about1 .middle-section a {
+  .w3l-integrity .middle-section a {
     margin-top: 25px; } }
 
 @media (max-width: 320px) {
-  .w3l-about1 .link-list-menu {
+  .w3l-integrity .link-list-menu {
     width: 281px; }
-  .w3l-about1 .link-list-menu p {
+  .w3l-integrity .link-list-menu p {
     font-size: 20px; } }
 
 .w3l-about2 .features-main {

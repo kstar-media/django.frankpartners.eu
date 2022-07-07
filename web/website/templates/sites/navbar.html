@@ -3,7 +3,7 @@
     <nav class="navbar navbar-expand-lg navbar-light p-2">
       <div class="container">
   <!--      <a class="navbar-brand" href="index.html"><span> <img src="assets/images/logo.jpg" style="width: 24px;" alt="main image"> </span>FRANK PARTNERS </a> -->
-        <a class="navbar-brand" href="{% url 'index' %}"><span> <img src="{% static '/images/logo.png' %}" style="width: 230px; padding: 3%;" alt="main image"> </span> </a>
+        <a class="navbar-brand" href="{% url 'website:index' %}"><span> <img src="{% static '/images/logo.png' %}" style="width: 230px; padding: 3%;" alt="main image"> </span> </a>
         <!-- if logo is image enable this   
       <a class="navbar-brand" href="#index.html">
           <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
@@ -19,28 +19,28 @@
               <a class="nav-link" href="index.html">Home</a>
             </li> -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="{% url 'esg' %}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="{% url 'website:esg' %}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 ESG
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="{% url 'ma' %}"><span class="fa fa-pencil-square-o" aria-hidden="true"></span>
+                <a class="dropdown-item" href="{% url 'website:ma' %}"><span class="fa fa-pencil-square-o" aria-hidden="true"></span>
                   M&A due diligence & advisory</a>
-                <a class="dropdown-item" href="{% url 'supply' %}"><span class="fa fa-graduation-cap" aria-hidden="true"></span>
+                <a class="dropdown-item" href="{% url 'website:supply' %}"><span class="fa fa-graduation-cap" aria-hidden="true"></span>
                   Supply chain</a>
-                <a class="dropdown-item" href="{% url 'hr' %}"><span class="fa fa-gavel" aria-hidden="true"></span>
+                <a class="dropdown-item" href="{% url 'website:hr' %}"><span class="fa fa-gavel" aria-hidden="true"></span>
                   Human rights</a>
               </div>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="{% url 'integrity' %}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="{% url 'website:integrity' %}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Integrity
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="{% url 'reputation' %}"><span class="fa fa-pencil-square-o" aria-hidden="true"></span>
+                <a class="dropdown-item" href="{% url 'website:reputation' %}"><span class="fa fa-pencil-square-o" aria-hidden="true"></span>
                   Reputational & compliance due diligence</a>
-                <a class="dropdown-item" href="{% url 'sanctions' %}"><span class="fa fa-graduation-cap" aria-hidden="true"></span>
+                <a class="dropdown-item" href="{% url 'website:sanctions' %}"><span class="fa fa-graduation-cap" aria-hidden="true"></span>
                   Sanctions </a>
-                <a class="dropdown-item" href="{% url 'intelligence' %}"><span class="fa fa-gavel" aria-hidden="true"></span>
+                <a class="dropdown-item" href="{% url 'website:intelligence' %}"><span class="fa fa-gavel" aria-hidden="true"></span>
                   Business intelligence</a>
               </div>
             </li>
@@ -49,7 +49,7 @@
                 Investigations
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="{% url 'investigation' %}"><span class="fa fa-pencil-square-o" aria-hidden="true"></span>Litigation support</a>
+                <a class="dropdown-item" href="{% url 'website:investigations' %}"><span class="fa fa-pencil-square-o" aria-hidden="true"></span>Litigation support</a>
                 <a class="dropdown-item" href=""><span class="fa fa-graduation-cap" aria-hidden="true"></span>Asset searches </a>
                 <a class="dropdown-item" href=""><span class="fa fa-gavel" aria-hidden="true"></span>Corporate investigations</a>
               </div>
@@ -59,9 +59,9 @@
                 About
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="{% url 'about' %}"><span class="fa fa-pencil-square-o" aria-hidden="true"></span>Our company</a>
-                <a class="dropdown-item" href="{% url 'about' %}"><span class="fa fa-graduation-cap" aria-hidden="true"></span>Our story</a>
-                <a class="dropdown-item" href="{% url 'about' %}"><span class="fa fa-gavel" aria-hidden="true"></span>Our team</a>
+                <a class="dropdown-item" href="{% url 'website:about' %}"><span class="fa fa-pencil-square-o" aria-hidden="true"></span>Our company</a>
+                <a class="dropdown-item" href="{% url 'website:about' %}"><span class="fa fa-graduation-cap" aria-hidden="true"></span>Our story</a>
+                <a class="dropdown-item" href="{% url 'website:about' %}"><span class="fa fa-gavel" aria-hidden="true"></span>Our team</a>
               </div>
             </li>
             <li class="nav-item dropdown">
@@ -69,9 +69,9 @@
                 Our values
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="{% url 'values' %}"><span class="fa fa-globe" aria-hidden="true"></span>Ethics as a guiding principle </a>
-                <a class="dropdown-item" href="{% url 'values' %}"><span class="fa fa-globe" aria-hidden="true"></span>Distributed work model</a>
-                <a class="dropdown-item" href="{% url 'values' %}"><span class="fa fa-globe" aria-hidden="true"></span>Inclusiveness </a>
+                <a class="dropdown-item" href="{% url 'website:values' %}"><span class="fa fa-globe" aria-hidden="true"></span>Ethics as a guiding principle </a>
+                <a class="dropdown-item" href="{% url 'website:values' %}"><span class="fa fa-globe" aria-hidden="true"></span>Distributed work model</a>
+                <a class="dropdown-item" href="{% url 'website:values' %}"><span class="fa fa-globe" aria-hidden="true"></span>Inclusiveness </a>
               </div>
             </li>
             <li class="nav-item">

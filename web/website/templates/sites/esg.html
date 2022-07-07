@@ -27,6 +27,42 @@
   <div class="features-main py-5">
     <div class="container py-lg-3">
       <div class="row features">
+        {% if c.service2_headline == None %}
+        <div class="col-md-12 feature-1 mt-5">
+          <div class="feature-body">
+            <div class="feature-images">
+              <span><i class="{{ c.service1_icon }}" aria-hidden="true"></i></span>
+            </div>
+            <div class="feature-info mt-4">
+              <h3 class="feature-titel my-2"> {{ c.service1_headline }} </h3>
+              <p class="feature-text"> {{ c.service1_text }} </p>
+            </div>
+          </div>
+        </div>
+        {% elif c.service3_headline == None %}
+        <div class="col-md-6 feature-1 mt-5">
+          <div class="feature-body">
+            <div class="feature-images">
+              <span><i class="{{ c.service1_icon }}" aria-hidden="true"></i></span>
+            </div>
+            <div class="feature-info mt-4">
+              <h3 class="feature-titel my-2"> {{ c.service1_headline }} </h3>
+              <p class="feature-text"> {{ c.service1_text }} </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 feature-1 mt-5">
+          <div class="feature-body">
+            <div class="feature-images">
+              <span><i class="{{ c.service1_icon }}" aria-hidden="true"></i></span>
+            </div>
+            <div class="feature-info mt-4">
+              <h3 class="feature-titel my-2"> {{ c.service2_headline }} </h3>
+              <p class="feature-text"> {{ c.service2_text }} </p>
+            </div>
+          </div>
+        </div>
+        {% else %}
         <div class="col-md-4 feature-1 mt-5">
           <div class="feature-body">
             <div class="feature-images">
@@ -38,31 +74,29 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4 feature-2 mt-5">
+        <div class="col-md-4 feature-1 mt-5">
           <div class="feature-body">
             <div class="feature-images">
-              <span><i class="{{ c.service2_icon }}" aria-hidden="true"></i></span>
+              <span><i class="{{ c.service1_icon }}" aria-hidden="true"></i></span>
             </div>
             <div class="feature-info mt-4">
               <h3 class="feature-titel my-2"> {{ c.service2_headline }} </h3>
               <p class="feature-text"> {{ c.service2_text }} </p>
-
             </div>
           </div>
         </div>
-        <div class="col-md-4 feature-3 mt-5">
+        <div class="col-md-4 feature-1 mt-5">
           <div class="feature-body">
             <div class="feature-images">
-              <span><i class="{{ c.service3_icon }}" aria-hidden="true"></i></span>
+              <span><i class="{{ c.service1_icon }}" aria-hidden="true"></i></span>
             </div>
             <div class="feature-info mt-4">
               <h3 class="feature-titel my-2"> {{ c.service3_headline }} </h3>
               <p class="feature-text"> {{ c.service3_text }} </p>
-              <div class="hover">
-              </div>
             </div>
           </div>
         </div>
+        {% endif %}
       </div>
     </div>
   </div>

@@ -6,19 +6,19 @@ urlpatterns = [
     path('index.html', index_view, name='index'),
 
     path('esg.html', esg_view, name='esg'),
-    path('ma.html', ma_view, name='ma'),
-    path('supply.html', supply_view, name='supply'),
-    path('human_rights.html', hr_view, name='hr'),
+    path('ma.html', esg_view, name='ma'),
+    path('supply.html', esg_view, name='supply'),
+    path('human_rights.html', esg_view, name='hr'),
 
     path('integrity.html', integrity_view, name='integrity'),
-    path('reputation.html', reputation_view, name='reputation'),
-    path('sanctions.html', sanctions_view, name='sanctions'),
-    path('intelligence.html', intelligence_view, name='intelligence'),
+    path('reputation.html', integrity_view, name='reputation'),
+    path('sanctions.html', integrity_view, name='sanctions'),
+    path('intelligence.html', integrity_view, name='intelligence'),
 
-    path('investigation.html', investigation_view, name='investigation'),
+    path('investigations.html', investigation_view, name='investigations'),
     path('litigation.html', investigation_view, name='litigation'),
-    path('assets.html', integrity_view, name='assets'),
-    path('ci.html', integrity_view, name='ci'),
+    path('assets.html', investigation_view, name='assets'),
+    path('ci.html', investigation_view, name='ci'),
 
     path('about.html', about_view, name='about'),
 
@@ -26,3 +26,5 @@ urlpatterns = [
 
     path('values.html', values_view, name='values'),
 ]
+
+app_name='website'

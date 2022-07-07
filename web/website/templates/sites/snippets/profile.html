@@ -1,24 +1,34 @@
 {% load static %}
 {% block content %}
 
-{% for c in content %}
 <section class="w3l-index-block3">
-    <div class="section-info py-5">
       <div class="container py-md-3">
+        <a href="{% url 'website:about' %}">
+          <span><i class="fa fa-solid fa-arrow-left" aria-hidden="true"></i> Our Team</span>
+        </a>
         <div class="row cwp17-two align-items-center">
           <div class="col-md-6 cwp17-image">
-            <img class="img-fluid" alt="" src="{% static '/images/emp5.jpg' %}">
+<!--            <img class="img-fluid" alt="" src="{% static '/images/emp5.jpg' %}"> -->
+            <img class="img-fluid" alt="" src="{{ content.pic.url }}">
+            {{ content.pic.url }}
           </div>
           <div class="col-md-6 cwp17-text">
-            <h2>{{ c.firstname }}</h2>
-            <p> {{ c.bio }} </p>
-<!--            <a href="#signup.html" style="color: var(--primary-color);"><i class="fa fa-briefcase" aria-hidden="true" style="margin-right: 5px;"></i>Services » </a>
+            <h2>{{ content.firstname }} {{ content.lastname }}</h2>
+            <a href="{{ content.linkedin }}" class="linkedin"><span class="fa fa-linkedin" aria-hidden="true"></span></a>
+
+            <p> {{ content.position }} in {{ content.location }} </p>
+            <p> {{ content.bio }} </p>
+            <p> {{ content.languages }} </p>
+            <p> Joined fp in {{ content.since }} </p>
+            <div class="social">
+              <a href="{{ content.email }}" class="email"><span class="fa fa-envelope" aria-hidden="true"> </span> Contact {{ content.firstname }} {{ content.lastname }}</a>
+            </div>
+
+<!--            <a href="#signup.html" style="color: var(--primaqsry-color);"><i class="fa fa-briefcase" aria-hidden="true" style="margin-right: 5px;"></i>Services » </a>
             <a href="#signup.html" style="color: #F58C88;"><i class="fa fa-book" aria-hidden="true" style="margin-right: 5px;"></i>Examples »</a>
             <a href="#signup.html"><i class="fa fa-handshake-o" aria-hidden="true" style="margin-right: 5px;"></i>Partners »</a>
 -->          </div>
         </div>
-      </div>
     </div>
   </section>
-  {% endfor %}
   {% endblock %}

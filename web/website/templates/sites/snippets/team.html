@@ -13,10 +13,10 @@
 						<div class="item col-sm-6 col-md-3">
 							<div class="team-info py-5">
 								<div class="column">
-									<a href="#URL"><img src="{% static '/images/emp5.jpg' %}" alt="" class="img-fluid"></a>
+									<a href="team/{{t.id}}"><img src="{{ t.pic.url }}" alt="" class="img-fluid"></a>
 								</div>
 								<div class="team-member">
-									<h3 class="name-pos"><a href="#URL">{{ t.firstname }} {{ t.lastname }}</a></h3>
+									<h3 class="name-pos"><a href="team/{{t.id}}">{{ t.firstname }} {{ t.lastname }}</a></h3>
 									<p>{{ t.position }}</p>
 									<div class="social">
 										<a href="#email" class="email"><span class="fa fa-envelope" aria-hidden="true"></span></a>

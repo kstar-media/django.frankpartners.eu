@@ -7,12 +7,12 @@ from django.forms import TextInput, Textarea
 
 @admin.register(service)
 class serviceAdmin(ImportExportModelAdmin):
-    list_display = ['headline',]
+    list_display = ['id','headline','group']
     pass
 
 @admin.register(team)
 class teamAdmin(ImportExportModelAdmin):
-    list_display = ['firstname', 'lastname']
+    list_display = ['id','firstname', 'lastname']
     pass
 
 @admin.register(about)

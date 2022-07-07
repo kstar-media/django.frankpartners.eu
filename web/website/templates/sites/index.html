@@ -14,7 +14,7 @@
           <a href="/newsfeed/subscribe" class="btn btn-primary btn-theme">Subscripe to Newsletter</a>
         </div>
         <div class="col-md-7 content-photo mt-md-0 mt-5">
-          <img src="{% static '/images/main.jpg' %}" class="img-fluid" alt="main image">
+          <img src="{% static '/images/main.png' %}" class="img-fluid" alt="main image">
         </div>
       </div>
       <div class="clear"></div>
@@ -23,7 +23,7 @@
 </div>
 <!-- //index-block1 -->
 <!-- //index-block1 -->
-<section class="w3l-about1">
+<section class="w3l-esg">
   <div class="new-block top-bottom">
     <div class="container">
       <div class="middle-section">
@@ -50,27 +50,27 @@
     <div class="row bottom_grids pt-md-3">
       <div class="col-lg-4 col-md-6 mt-5">
         <div class="s-block">
-          <a href="blog-single.html" class="d-block p-lg-4 p-3">
+          <a href="{% url 'website:esg' %}" class="d-block p-lg-4 p-3">
             <img src="assets/images/s1.png" alt="" class="img-fluid">
-            <h3 class="my-3">Due Diligence Services</h3>
+            <h3 class="my-3">ESG</h3>
             <p class="">Our goal is to help our companies maintain or achieve best in class positions. Build an online presence with this professional bootstrap 4 template.</p>
           </a>
         </div>
       </div>
       <div class="col-lg-4 col-md-6 mt-5">
         <div class="s-block">
-          <a href="blog-single.html" class="d-block p-lg-4 p-3">
+          <a href="{% url 'website:integrity' %}" class="d-block p-lg-4 p-3">
             <img src="assets/images/s2.png" alt="" class="img-fluid">
-            <h3 class="my-3">ESG advisory</h3>
+            <h3 class="my-3">Integrity</h3>
             <p class="">Our goal is to help our companies maintain or achieve best in class positions. Build an online presence with this professional bootstrap 4 template.</p>
           </a>
         </div>
       </div>
       <div class="col-lg-4 mt-5">
         <div class="s-block">
-          <a href="blog-single.html" class="d-block p-lg-4 p-3">
+          <a href="{% url 'website:investigations' %}" class="d-block p-lg-4 p-3">
             <img src="assets/images/s3.png" alt="" class="img-fluid">
-            <h3 class="my-3">Dispute related services</h3>
+            <h3 class="my-3">Investigations</h3>
             <p class="">Our goal is to help our companies maintain or achieve best in class positions. Build an online presence with this professional bootstrap 4 template.</p>
           </a>
         </div>
